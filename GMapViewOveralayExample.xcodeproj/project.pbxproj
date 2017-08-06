@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A7916A11F37828F00BD5DE0 /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7916A01F37828F00BD5DE0 /* UIView+Anchor.swift */; };
+		0A7916A41F37835C00BD5DE0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7916A31F37835C00BD5DE0 /* MapViewController.swift */; };
+		0A7916A61F3787BC00BD5DE0 /* MapViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7916A51F3787BC00BD5DE0 /* MapViewDataSource.swift */; };
+		0A7916A91F37883E00BD5DE0 /* MapViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7916A81F37883E00BD5DE0 /* MapViewPresenter.swift */; };
+		0AE871D31F33EE4F008A8B27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE871D21F33EE4F008A8B27 /* AppDelegate.swift */; };
+		0AE871DA1F33EE4F008A8B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE871D91F33EE4F008A8B27 /* Assets.xcassets */; };
+		0AE871DD1F33EE4F008A8B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE871DB1F33EE4F008A8B27 /* LaunchScreen.storyboard */; };
+		0AE871E81F33EE4F008A8B27 /* GMapViewOveralayExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE871E71F33EE4F008A8B27 /* GMapViewOveralayExampleTests.swift */; };
+		0AE871F31F33EE4F008A8B27 /* GMapViewOveralayExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE871F21F33EE4F008A8B27 /* GMapViewOveralayExampleUITests.swift */; };
+		4E7EFA7AD0A812CB5875BE34 /* Pods_GMapViewOveralayExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD38F4E08627EF445802C3D9 /* Pods_GMapViewOveralayExampleUITests.framework */; };
+		6217CEE6DC30D8BE49ED66BF /* Pods_GMapViewOveralayExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC16A27E36521567BC9EED8D /* Pods_GMapViewOveralayExampleTests.framework */; };
+		6A6347B5506CBF7DC4BA1016 /* Pods_GMapViewOveralayExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9776FF5413C9BDE4DC313B58 /* Pods_GMapViewOveralayExample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AE871E41F33EE4F008A8B27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AE871C71F33EE4F008A8B27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AE871CE1F33EE4F008A8B27;
+			remoteInfo = GMapViewOveralayExample;
+		};
+		0AE871EF1F33EE4F008A8B27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AE871C71F33EE4F008A8B27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AE871CE1F33EE4F008A8B27;
+			remoteInfo = GMapViewOveralayExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A7916A01F37828F00BD5DE0 /* UIView+Anchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Anchor.swift"; sourceTree = "<group>"; };
+		0A7916A31F37835C00BD5DE0 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0A7916A51F3787BC00BD5DE0 /* MapViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewDataSource.swift; sourceTree = "<group>"; };
+		0A7916A81F37883E00BD5DE0 /* MapViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewPresenter.swift; sourceTree = "<group>"; };
+		0AE871CF1F33EE4F008A8B27 /* GMapViewOveralayExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMapViewOveralayExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AE871D21F33EE4F008A8B27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0AE871D91F33EE4F008A8B27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0AE871DC1F33EE4F008A8B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0AE871DE1F33EE4F008A8B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AE871E31F33EE4F008A8B27 /* GMapViewOveralayExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GMapViewOveralayExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AE871E71F33EE4F008A8B27 /* GMapViewOveralayExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMapViewOveralayExampleTests.swift; sourceTree = "<group>"; };
+		0AE871E91F33EE4F008A8B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AE871EE1F33EE4F008A8B27 /* GMapViewOveralayExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GMapViewOveralayExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AE871F21F33EE4F008A8B27 /* GMapViewOveralayExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMapViewOveralayExampleUITests.swift; sourceTree = "<group>"; };
+		0AE871F41F33EE4F008A8B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35C196E2D1B3C1656A5A0FE5 /* Pods-GMapViewOveralayExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMapViewOveralayExampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GMapViewOveralayExampleUITests/Pods-GMapViewOveralayExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		64B65E0AE2A3F6B276E7C494 /* Pods-GMapViewOveralayExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMapViewOveralayExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GMapViewOveralayExampleUITests/Pods-GMapViewOveralayExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6920E28669E5F48A9E32776E /* Pods-GMapViewOveralayExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMapViewOveralayExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GMapViewOveralayExample/Pods-GMapViewOveralayExample.debug.xcconfig"; sourceTree = "<group>"; };
+		805C8DC622C76B7E01E6D3AF /* Pods-GMapViewOveralayExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMapViewOveralayExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GMapViewOveralayExampleTests/Pods-GMapViewOveralayExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		9776FF5413C9BDE4DC313B58 /* Pods_GMapViewOveralayExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMapViewOveralayExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E8B89E6FCFE365D96D188A4 /* Pods-GMapViewOveralayExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMapViewOveralayExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GMapViewOveralayExampleTests/Pods-GMapViewOveralayExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC16A27E36521567BC9EED8D /* Pods_GMapViewOveralayExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMapViewOveralayExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0FEC72B92173EC38312BABB /* Pods-GMapViewOveralayExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMapViewOveralayExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GMapViewOveralayExample/Pods-GMapViewOveralayExample.release.xcconfig"; sourceTree = "<group>"; };
+		FD38F4E08627EF445802C3D9 /* Pods_GMapViewOveralayExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMapViewOveralayExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AE871CC1F33EE4F008A8B27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A6347B5506CBF7DC4BA1016 /* Pods_GMapViewOveralayExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AE871E01F33EE4F008A8B27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6217CEE6DC30D8BE49ED66BF /* Pods_GMapViewOveralayExampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AE871EB1F33EE4F008A8B27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E7EFA7AD0A812CB5875BE34 /* Pods_GMapViewOveralayExampleUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		088BCFC18A573269C7F6993B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9776FF5413C9BDE4DC313B58 /* Pods_GMapViewOveralayExample.framework */,
+				CC16A27E36521567BC9EED8D /* Pods_GMapViewOveralayExampleTests.framework */,
+				FD38F4E08627EF445802C3D9 /* Pods_GMapViewOveralayExampleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A7916A71F37881D00BD5DE0 /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0A7916A51F3787BC00BD5DE0 /* MapViewDataSource.swift */,
+				0A7916A31F37835C00BD5DE0 /* MapViewController.swift */,
+				0A7916A81F37883E00BD5DE0 /* MapViewPresenter.swift */,
+			);
+			name = MapViewController;
+			sourceTree = "<group>";
+		};
+		0AE871C61F33EE4F008A8B27 = {
+			isa = PBXGroup;
+			children = (
+				0AE871D11F33EE4F008A8B27 /* GMapViewOveralayExample */,
+				0AE871E61F33EE4F008A8B27 /* GMapViewOveralayExampleTests */,
+				0AE871F11F33EE4F008A8B27 /* GMapViewOveralayExampleUITests */,
+				0AE871D01F33EE4F008A8B27 /* Products */,
+				A9497D1E730722BCF525A887 /* Pods */,
+				088BCFC18A573269C7F6993B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0AE871D01F33EE4F008A8B27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AE871CF1F33EE4F008A8B27 /* GMapViewOveralayExample.app */,
+				0AE871E31F33EE4F008A8B27 /* GMapViewOveralayExampleTests.xctest */,
+				0AE871EE1F33EE4F008A8B27 /* GMapViewOveralayExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AE871D11F33EE4F008A8B27 /* GMapViewOveralayExample */ = {
+			isa = PBXGroup;
+			children = (
+				0A7916A71F37881D00BD5DE0 /* MapViewController */,
+				0AE871D21F33EE4F008A8B27 /* AppDelegate.swift */,
+				0AE871D91F33EE4F008A8B27 /* Assets.xcassets */,
+				0AE871DB1F33EE4F008A8B27 /* LaunchScreen.storyboard */,
+				0AE871DE1F33EE4F008A8B27 /* Info.plist */,
+				0A7916A01F37828F00BD5DE0 /* UIView+Anchor.swift */,
+			);
+			path = GMapViewOveralayExample;
+			sourceTree = "<group>";
+		};
+		0AE871E61F33EE4F008A8B27 /* GMapViewOveralayExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				0AE871E71F33EE4F008A8B27 /* GMapViewOveralayExampleTests.swift */,
+				0AE871E91F33EE4F008A8B27 /* Info.plist */,
+			);
+			path = GMapViewOveralayExampleTests;
+			sourceTree = "<group>";
+		};
+		0AE871F11F33EE4F008A8B27 /* GMapViewOveralayExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0AE871F21F33EE4F008A8B27 /* GMapViewOveralayExampleUITests.swift */,
+				0AE871F41F33EE4F008A8B27 /* Info.plist */,
+			);
+			path = GMapViewOveralayExampleUITests;
+			sourceTree = "<group>";
+		};
+		A9497D1E730722BCF525A887 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6920E28669E5F48A9E32776E /* Pods-GMapViewOveralayExample.debug.xcconfig */,
+				E0FEC72B92173EC38312BABB /* Pods-GMapViewOveralayExample.release.xcconfig */,
+				9E8B89E6FCFE365D96D188A4 /* Pods-GMapViewOveralayExampleTests.debug.xcconfig */,
+				805C8DC622C76B7E01E6D3AF /* Pods-GMapViewOveralayExampleTests.release.xcconfig */,
+				64B65E0AE2A3F6B276E7C494 /* Pods-GMapViewOveralayExampleUITests.debug.xcconfig */,
+				35C196E2D1B3C1656A5A0FE5 /* Pods-GMapViewOveralayExampleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AE871CE1F33EE4F008A8B27 /* GMapViewOveralayExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AE871F71F33EE4F008A8B27 /* Build configuration list for PBXNativeTarget "GMapViewOveralayExample" */;
+			buildPhases = (
+				0B0DAF835013745C7E24EC81 /* [CP] Check Pods Manifest.lock */,
+				0AE871CB1F33EE4F008A8B27 /* Sources */,
+				0AE871CC1F33EE4F008A8B27 /* Frameworks */,
+				0AE871CD1F33EE4F008A8B27 /* Resources */,
+				0F2B1761077AF5FAEA624FDE /* [CP] Embed Pods Frameworks */,
+				00E4FE6284CC85052E68663A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GMapViewOveralayExample;
+			productName = GMapViewOveralayExample;
+			productReference = 0AE871CF1F33EE4F008A8B27 /* GMapViewOveralayExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0AE871E21F33EE4F008A8B27 /* GMapViewOveralayExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AE871FA1F33EE4F008A8B27 /* Build configuration list for PBXNativeTarget "GMapViewOveralayExampleTests" */;
+			buildPhases = (
+				23C9819C27A66598333C986B /* [CP] Check Pods Manifest.lock */,
+				0AE871DF1F33EE4F008A8B27 /* Sources */,
+				0AE871E01F33EE4F008A8B27 /* Frameworks */,
+				0AE871E11F33EE4F008A8B27 /* Resources */,
+				043FC50641BA871D3DF993CD /* [CP] Embed Pods Frameworks */,
+				1C169CF5DA72356BF625A4EC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AE871E51F33EE4F008A8B27 /* PBXTargetDependency */,
+			);
+			name = GMapViewOveralayExampleTests;
+			productName = GMapViewOveralayExampleTests;
+			productReference = 0AE871E31F33EE4F008A8B27 /* GMapViewOveralayExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0AE871ED1F33EE4F008A8B27 /* GMapViewOveralayExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AE871FD1F33EE4F008A8B27 /* Build configuration list for PBXNativeTarget "GMapViewOveralayExampleUITests" */;
+			buildPhases = (
+				48FE0340B0F4C4A23AC67EB0 /* [CP] Check Pods Manifest.lock */,
+				0AE871EA1F33EE4F008A8B27 /* Sources */,
+				0AE871EB1F33EE4F008A8B27 /* Frameworks */,
+				0AE871EC1F33EE4F008A8B27 /* Resources */,
+				7E747E2FB0BE324350BF095D /* [CP] Embed Pods Frameworks */,
+				37352EFC3116F6D319CAC0EC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AE871F01F33EE4F008A8B27 /* PBXTargetDependency */,
+			);
+			name = GMapViewOveralayExampleUITests;
+			productName = GMapViewOveralayExampleUITests;
+			productReference = 0AE871EE1F33EE4F008A8B27 /* GMapViewOveralayExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AE871C71F33EE4F008A8B27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Lucas;
+				TargetAttributes = {
+					0AE871CE1F33EE4F008A8B27 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					0AE871E21F33EE4F008A8B27 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0AE871CE1F33EE4F008A8B27;
+					};
+					0AE871ED1F33EE4F008A8B27 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0AE871CE1F33EE4F008A8B27;
+					};
+				};
+			};
+			buildConfigurationList = 0AE871CA1F33EE4F008A8B27 /* Build configuration list for PBXProject "GMapViewOveralayExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0AE871C61F33EE4F008A8B27;
+			productRefGroup = 0AE871D01F33EE4F008A8B27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AE871CE1F33EE4F008A8B27 /* GMapViewOveralayExample */,
+				0AE871E21F33EE4F008A8B27 /* GMapViewOveralayExampleTests */,
+				0AE871ED1F33EE4F008A8B27 /* GMapViewOveralayExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AE871CD1F33EE4F008A8B27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE871DD1F33EE4F008A8B27 /* LaunchScreen.storyboard in Resources */,
+				0AE871DA1F33EE4F008A8B27 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AE871E11F33EE4F008A8B27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AE871EC1F33EE4F008A8B27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00E4FE6284CC85052E68663A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GMapViewOveralayExample/Pods-GMapViewOveralayExample-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GMapViewOveralayExample/Pods-GMapViewOveralayExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		043FC50641BA871D3DF993CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GMapViewOveralayExampleTests/Pods-GMapViewOveralayExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0B0DAF835013745C7E24EC81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GMapViewOveralayExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F2B1761077AF5FAEA624FDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GMapViewOveralayExample/Pods-GMapViewOveralayExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C169CF5DA72356BF625A4EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GMapViewOveralayExampleTests/Pods-GMapViewOveralayExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23C9819C27A66598333C986B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GMapViewOveralayExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37352EFC3116F6D319CAC0EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GMapViewOveralayExampleUITests/Pods-GMapViewOveralayExampleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48FE0340B0F4C4A23AC67EB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GMapViewOveralayExampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E747E2FB0BE324350BF095D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GMapViewOveralayExampleUITests/Pods-GMapViewOveralayExampleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AE871CB1F33EE4F008A8B27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A7916A91F37883E00BD5DE0 /* MapViewPresenter.swift in Sources */,
+				0AE871D31F33EE4F008A8B27 /* AppDelegate.swift in Sources */,
+				0A7916A41F37835C00BD5DE0 /* MapViewController.swift in Sources */,
+				0A7916A61F3787BC00BD5DE0 /* MapViewDataSource.swift in Sources */,
+				0A7916A11F37828F00BD5DE0 /* UIView+Anchor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AE871DF1F33EE4F008A8B27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE871E81F33EE4F008A8B27 /* GMapViewOveralayExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AE871EA1F33EE4F008A8B27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE871F31F33EE4F008A8B27 /* GMapViewOveralayExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AE871E51F33EE4F008A8B27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AE871CE1F33EE4F008A8B27 /* GMapViewOveralayExample */;
+			targetProxy = 0AE871E41F33EE4F008A8B27 /* PBXContainerItemProxy */;
+		};
+		0AE871F01F33EE4F008A8B27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AE871CE1F33EE4F008A8B27 /* GMapViewOveralayExample */;
+			targetProxy = 0AE871EF1F33EE4F008A8B27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0AE871DB1F33EE4F008A8B27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AE871DC1F33EE4F008A8B27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AE871F51F33EE4F008A8B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0AE871F61F33EE4F008A8B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0AE871F81F33EE4F008A8B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6920E28669E5F48A9E32776E /* Pods-GMapViewOveralayExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GMapViewOveralayExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lucas.GMapViewOveralayExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0AE871F91F33EE4F008A8B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0FEC72B92173EC38312BABB /* Pods-GMapViewOveralayExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GMapViewOveralayExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lucas.GMapViewOveralayExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0AE871FB1F33EE4F008A8B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E8B89E6FCFE365D96D188A4 /* Pods-GMapViewOveralayExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GMapViewOveralayExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lucas.GMapViewOveralayExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GMapViewOveralayExample.app/GMapViewOveralayExample";
+			};
+			name = Debug;
+		};
+		0AE871FC1F33EE4F008A8B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 805C8DC622C76B7E01E6D3AF /* Pods-GMapViewOveralayExampleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GMapViewOveralayExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lucas.GMapViewOveralayExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GMapViewOveralayExample.app/GMapViewOveralayExample";
+			};
+			name = Release;
+		};
+		0AE871FE1F33EE4F008A8B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64B65E0AE2A3F6B276E7C494 /* Pods-GMapViewOveralayExampleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GMapViewOveralayExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lucas.GMapViewOveralayExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GMapViewOveralayExample;
+			};
+			name = Debug;
+		};
+		0AE871FF1F33EE4F008A8B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35C196E2D1B3C1656A5A0FE5 /* Pods-GMapViewOveralayExampleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GMapViewOveralayExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lucas.GMapViewOveralayExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GMapViewOveralayExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AE871CA1F33EE4F008A8B27 /* Build configuration list for PBXProject "GMapViewOveralayExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AE871F51F33EE4F008A8B27 /* Debug */,
+				0AE871F61F33EE4F008A8B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AE871F71F33EE4F008A8B27 /* Build configuration list for PBXNativeTarget "GMapViewOveralayExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AE871F81F33EE4F008A8B27 /* Debug */,
+				0AE871F91F33EE4F008A8B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AE871FA1F33EE4F008A8B27 /* Build configuration list for PBXNativeTarget "GMapViewOveralayExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AE871FB1F33EE4F008A8B27 /* Debug */,
+				0AE871FC1F33EE4F008A8B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AE871FD1F33EE4F008A8B27 /* Build configuration list for PBXNativeTarget "GMapViewOveralayExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AE871FE1F33EE4F008A8B27 /* Debug */,
+				0AE871FF1F33EE4F008A8B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0AE871C71F33EE4F008A8B27 /* Project object */;
+}
