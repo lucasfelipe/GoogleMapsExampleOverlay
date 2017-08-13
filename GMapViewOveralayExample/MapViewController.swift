@@ -9,15 +9,15 @@
 import UIKit
 import GoogleMaps
 
-class MapViewController: UIViewController, MapViewPresenter, UICollectionViewDataSource {
+class MapViewController: UIViewController, MapViewPresenter {
 
     lazy var mapViewDataSource: MapViewDataSource = MapViewDataSource(withPresenter: self)
+    lazy var collectionViewDataSource: OverlayViewDataSource = OverlayViewDataSource(collectionView: self.collectionView)
     
     var collectionView: OverlayView = {
         var collectionView = OverlayView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.backgroundColor = UIColor.groupTableViewBackground
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         return collectionView
     }()
     
@@ -67,9 +67,6 @@ class MapViewController: UIViewController, MapViewPresenter, UICollectionViewDat
             .bottomAnchor(equalTo: view.bottomAnchor)
             .topAnchor(equalTo: navigationBar.bottomAnchor)
         
-        collectionView.dataSource = self
-        
-        
     }
     
     
@@ -82,6 +79,8 @@ class MapViewController: UIViewController, MapViewPresenter, UICollectionViewDat
                 .leadingAnchor(equalTo: view.leadingAnchor)
                 .bottomAnchor(equalTo: view.bottomAnchor)
                 .heightAnchor(equalTo: 200)
+            
+           collectionViewDataSource.list()
         }
         
     }
@@ -98,18 +97,5 @@ class MapViewController: UIViewController, MapViewPresenter, UICollectionViewDat
             .topAnchor(equalTo: self.mapView.topAnchor)
             .bottomAnchor(equalTo: self.mapView.bottomAnchor)
     }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = UIColor.brown
-        return cell
-    }
 
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
 }

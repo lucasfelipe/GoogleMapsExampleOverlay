@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0A598F541F3BF5BF002C73CE /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A598F531F3BF5BF002C73CE /* OverlayView.swift */; };
+		0A60550E1F40EE6300ABB8F4 /* OverlayViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A60550D1F40EE6300ABB8F4 /* OverlayViewDataSource.swift */; };
+		0A6055101F40EFC300ABB8F4 /* OverlayViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A60550F1F40EFC300ABB8F4 /* OverlayViewCell.swift */; };
 		0A7916A11F37828F00BD5DE0 /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7916A01F37828F00BD5DE0 /* UIView+Anchor.swift */; };
 		0A7916A41F37835C00BD5DE0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7916A31F37835C00BD5DE0 /* MapViewController.swift */; };
 		0A7916A61F3787BC00BD5DE0 /* MapViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7916A51F3787BC00BD5DE0 /* MapViewDataSource.swift */; };
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		0A598F531F3BF5BF002C73CE /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		0A60550D1F40EE6300ABB8F4 /* OverlayViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayViewDataSource.swift; sourceTree = "<group>"; };
+		0A60550F1F40EFC300ABB8F4 /* OverlayViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayViewCell.swift; sourceTree = "<group>"; };
 		0A7916A01F37828F00BD5DE0 /* UIView+Anchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Anchor.swift"; sourceTree = "<group>"; };
 		0A7916A31F37835C00BD5DE0 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0A7916A51F3787BC00BD5DE0 /* MapViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewDataSource.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				0A7916A31F37835C00BD5DE0 /* MapViewController.swift */,
 				0A7916A81F37883E00BD5DE0 /* MapViewPresenter.swift */,
 				0A598F531F3BF5BF002C73CE /* OverlayView.swift */,
+				0A60550D1F40EE6300ABB8F4 /* OverlayViewDataSource.swift */,
+				0A60550F1F40EFC300ABB8F4 /* OverlayViewCell.swift */,
 			);
 			name = MapViewController;
 			sourceTree = "<group>";
@@ -478,7 +484,9 @@
 				0A7916A91F37883E00BD5DE0 /* MapViewPresenter.swift in Sources */,
 				0AE871D31F33EE4F008A8B27 /* AppDelegate.swift in Sources */,
 				0A7916A41F37835C00BD5DE0 /* MapViewController.swift in Sources */,
+				0A60550E1F40EE6300ABB8F4 /* OverlayViewDataSource.swift in Sources */,
 				0A598F541F3BF5BF002C73CE /* OverlayView.swift in Sources */,
+				0A6055101F40EFC300ABB8F4 /* OverlayViewCell.swift in Sources */,
 				0A7916A61F3787BC00BD5DE0 /* MapViewDataSource.swift in Sources */,
 				0A7916A11F37828F00BD5DE0 /* UIView+Anchor.swift in Sources */,
 			);
