@@ -58,7 +58,7 @@ class MapViewController: UIViewController, MapViewPresenter {
                 title: "Overlay",
                 style: .plain,
                 target: self,
-                action: #selector(criarOverlay)), animated: true)
+                action: #selector(createOverlay)), animated: true)
         
         navigationBar.items = [navigation]
         
@@ -70,7 +70,7 @@ class MapViewController: UIViewController, MapViewPresenter {
     }
     
     
-    func criarOverlay() {
+    func createOverlay() {
         if self.collectionView.isDescendant(of: self.view) { collectionView.removeFromSuperview() }
         else {
             self.view.addSubview(collectionView)
